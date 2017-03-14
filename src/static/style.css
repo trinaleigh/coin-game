@@ -1,0 +1,9 @@
+* {
+	--primary: #48466D;
+	--secondary: #3D84A8;
+	--tertiary: #46CDCF;
+	--highlight: #ABEDD8;
+	font-family: Helvetica;
+	color: var(--primary);
+}
+
