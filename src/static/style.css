@@ -7,3 +7,16 @@
 	color: var(--primary);
 }
 
+#grid {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border: 1px solid;
+}
+
+#player {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background-color: var(--secondary)
+}

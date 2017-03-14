@@ -1,6 +1,6 @@
-const position = (state = [0,0], action) => {
+const position = (state = {x:0, y:0}, action) => {
 	if (action.type === 'MOVE_PLAYER') {
-        return [state[0] + action.x, state[1] + action.y]
+        return {x: state.x + action.x, y: state.y + action.y}
 	} else {
 		return state
 	}

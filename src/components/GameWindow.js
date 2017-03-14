@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Board from '../containers/Board.js';
 
 
 export default class Home extends React.Component {
@@ -12,6 +13,7 @@ export default class Home extends React.Component {
 
 	    return (
 	    	<div>
+	    	<Board/>
 	    	</div>
 	    );
 	}
