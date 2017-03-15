@@ -1,10 +1,11 @@
 * {
-	--primary: #2C3D4F;
-	--secondary: #34495D;
-	--tertiary: #EE7738;
-	--highlight: #F59D2A;
+	--primary: #F4F4F4;
+	--secondary: #8C0909;
+	--tertiary: #4AA9AF;
+	--highlight: #FB9935;
 	font-family: Helvetica;
-	color: var(--primary);
+	color: var(--secondary);
+	background-color: var(--primary)
 }
 
 #border {
@@ -15,14 +16,14 @@
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
-	background-color: var(--primary);
+	background-color: var(--secondary);
 }
 
 #grid {
 	position: relative;
 	height: 60vmin;
 	width: 60vmin;
-	background-color: var(--secondary);
+	background-color: var(--primary);
 }
 
 #player {
