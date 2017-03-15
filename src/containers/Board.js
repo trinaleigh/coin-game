@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Grid from '../components/Grid.js'
+import Controls from '../components/Controls.js'
 import { movePlayer } from '../actions'
 
 const mapStateToProps = (state) => {
@@ -20,6 +20,6 @@ const mapDispatchToProps = (dispatch) => {
 const Board = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(Grid)
+)(Controls)
 
 export default Board

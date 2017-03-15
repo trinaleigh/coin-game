@@ -4,8 +4,8 @@ const Player = ({ x, y }) => {
 	return (
 	<div id="player"
 		style={{
- 			left: x*20 + 'px',
-  			top: y*20 + 'px'
+ 			left: x*40 + 'px',
+  			top: y*40 + 'px'
 		}}
 	>
 	</div>
