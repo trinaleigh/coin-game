@@ -1,9 +1,23 @@
 const position = (state = {x:0, y:0}, action) => {
 	if (action.type === 'MOVE_PLAYER') {
-		var xMove = state.x + action.x
-		var yMove = state.y + action.y
-        return {x: xMove > 0 && xMove < 10 ? xMove : 0, 
-        		y: yMove > 0 && yMove < 10 ? yMove : 0}
+		
+		var xNext = state.x + action.dx
+		var yNext = state.y + action.dy
+		
+		if (xNext > 9) {
+			xNext = 0
+		} else if (xNext < 0) {
+			xNext = 9
+		}
+				
+		if (yNext > 9) {
+			yNext = 0
+		} else if (yNext < 0) {
+			yNext = 9
+		}		
+
+        return {x: xNext, 
+        		y: yNext}
 	} else {
 		return state
 	}

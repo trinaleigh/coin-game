@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		translate: (event) => {
-			dispatch(movePlayer(0,1))
+			dispatch(movePlayer(event.nativeEvent.offsetX, event.nativeEvent.offsetY))
 		}
 	}
 }
