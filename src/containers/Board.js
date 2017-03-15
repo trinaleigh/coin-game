@@ -5,7 +5,8 @@ import { movePlayer } from '../actions'
 const mapStateToProps = (state) => {
 	return {
 		x: state.position.x,
-		y: state.position.y
+		y: state.position.y,
+		coins: state.coins
 	}
 }
 

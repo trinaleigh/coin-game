@@ -1,4 +1,4 @@
-const screen = (state = [], action) => {
+const coins = (state = [{x:2, y:7}, {x:4, y:2}], action) => {
 	if (action.type === 'UPDATE_SCREEN') {
 		return action.coords;
 	} else {
@@ -6,4 +6,4 @@ const screen = (state = [], action) => {
 	}
 }
 
-export default screen
+export default coins

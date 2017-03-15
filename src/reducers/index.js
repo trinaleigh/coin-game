@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
 import score from './score.js'
 import position from './position.js'
-import screen from './screen.js'
+import coins from './coins.js'
 
 const game = combineReducers({
   score,
   position,
-  screen
+  coins
 })
 
 export default game

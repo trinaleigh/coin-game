@@ -17,7 +17,7 @@ export default class Layout extends React.Component {
 	  		<Provider store={store}>
 				<div className="app">
 					<header>
-						<h1>grab coins!</h1>
+						<h1></h1>
 					</header>
 					<div className="main-content">{this.props.children}</div>
 					<footer>
