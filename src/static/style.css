@@ -1,14 +1,10 @@
 * {
-	--primary: #F06868;
-	--secondary: #FAB57A;
-	--tertiary: #EDF798;
-	--highlight: #80D6FF;
+	--primary: #07689F;
+	--secondary: #A2D5F2;
+	--tertiary: #FAFAFA;
+	--highlight: #FFCE63;
 	font-family: Helvetica;
 	color: var(--primary);
-}
-
-h1 {
-	user-select: none;
 }
 
 #border {
@@ -33,7 +29,7 @@ h1 {
 	position: absolute;
 	height: 40px;
 	width: 40px;
-	background-color: var(--highlight)
+	background-color: var(--secondary)
 }
 
 .coin {
@@ -41,7 +37,7 @@ h1 {
 	height: 40px;
 	width: 40px;
 	border-radius: 20px;
-	background-color: var(--secondary)
+	background-color: var(--highlight)
 }
 
 .controls {
@@ -59,6 +55,7 @@ h1 {
 	align-items: middle;
 	font-size: 3vmax;
 	margin: 25px;
+	user-select: none;
 }
 
 #scoreboard p {
