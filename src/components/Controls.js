@@ -17,7 +17,7 @@ const Controls = ({ x, y, coins, score, translate }) => (
   </div>
 )
 
-Grid.propTypes = {
+Controls.propTypes = {
 	translate: PropTypes.func.isRequired,
 	x: PropTypes.number.isRequired,
 	y: PropTypes.number.isRequired,

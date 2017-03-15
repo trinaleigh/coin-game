@@ -1,10 +1,3 @@
-export const addCoin = (points) => {
-	return {
-		type: 'ADD_COIN',
-		points
-	}
-}
-
 export const movePlayer = (xClick,yClick) => {
 	// convert click position to move (dx, dy)
 	let dx = 0, dy = 0
@@ -27,9 +20,8 @@ export const movePlayer = (xClick,yClick) => {
 	}
 }
 
-export const updateScreen = (coords) => {
+export const reset = () => {
 	return {
-		type: 'UPDATE_SCREEN',
-		coords
-  }
+		type: 'RESET'
+	}
 }

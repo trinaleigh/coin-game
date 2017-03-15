@@ -33,7 +33,8 @@ const game = (state = { x: 0, y: 0, coins: [{x:2, y:2}, {x:2, y:7}, {x:7, y:2}, 
         		y: yNext,
         		coins: nextCoins,
         		score: nextScore}
-
+    } else if (action.type === 'RESET') {
+    	return { x: 0, y: 0, coins: [{x:2, y:2}, {x:2, y:7}, {x:7, y:2}, {x:7, y:7},], score: 0 }
 	} else {
 		return state
 	}
