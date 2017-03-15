@@ -4,8 +4,8 @@ const Coin = ({ x, y }) => {
 	return (
 	<div className="coin"
 		style={{
- 			left: x*40 + 'px',
-  			top: y*40 + 'px'
+ 			left: x*10 + '%',
+  			top: y*10 + '%'
 		}}
 	>
 	</div>

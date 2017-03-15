@@ -14,7 +14,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		translate: (event) => {
-			dispatch(movePlayer(event.nativeEvent.offsetX, event.nativeEvent.offsetY))
+			var xClick = event.nativeEvent.offsetX/event.nativeEvent.target.offsetWidth
+			var yClick = event.nativeEvent.offsetY/event.nativeEvent.target.offsetHeight
+			dispatch(movePlayer(xClick,yClick))
 		}
 	}
 }
