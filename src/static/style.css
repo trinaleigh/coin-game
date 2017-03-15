@@ -1,8 +1,8 @@
 * {
-	--primary: #48466D;
-	--secondary: #3D84A8;
-	--tertiary: #46CDCF;
-	--highlight: #ABEDD8;
+	--primary: #F06868;
+	--secondary: #FAB57A;
+	--tertiary: #EDF798;
+	--highlight: #80D6FF;
 	font-family: Helvetica;
 	color: var(--primary);
 }
@@ -11,29 +11,29 @@ h1 {
 	user-select: none;
 }
 
-#controls {
+#border {
 	height: 500px;
 	width: 500px;
-	margin: auto;
+	margin: 25px;
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
-	background-color: var(--secondary);
+	background-color: var(--primary);
 }
 
 #grid {
 	position: relative;
 	height: 400px;
 	width: 400px;
-	background-color: var(--highlight);
+	background-color: var(--tertiary);
 }
 
 #player {
 	position: absolute;
 	height: 40px;
 	width: 40px;
-	background-color: var(--tertiary)
+	background-color: var(--highlight)
 }
 
 .coin {
@@ -41,5 +41,31 @@ h1 {
 	height: 40px;
 	width: 40px;
 	border-radius: 20px;
-	background-color: var(--primary)
+	background-color: var(--secondary)
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#scoreboard {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: middle;
+	font-size: 3vmax;
+	margin: 25px;
+}
+
+#scoreboard p {
+	margin: 0;
+	text-align: center;
+}
+
+#score {
+	font-size: 10vmax;
 }

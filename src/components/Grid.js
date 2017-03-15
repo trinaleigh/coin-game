@@ -3,18 +3,18 @@ import Player from './Player.js'
 import Coin from './Coin.js'
 
 const Grid = ({ x, y, coins }) => (
-  <div id="grid">
-      {coins.map(coin =>
-        <Coin
-          x={coin.x}
-          y={coin.y}
-        />
-      )}
-      <Player
-        x={x}
-        y={y}
-      />
-  </div>
+	<div id="grid">
+		{coins.map(coin =>
+			<Coin
+				x={coin.x}
+				y={coin.y}
+			/>
+		)}
+		<Player
+			x={x}
+			y={y}
+		/>
+	</div>
 )
 
 Grid.propTypes = {
