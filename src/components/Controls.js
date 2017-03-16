@@ -1,20 +1,28 @@
 import React, { PropTypes } from 'react'
 import Grid from './Grid.js'
+import Reset from '../containers/Reset.js'
 import Scoreboard from './Scoreboard.js'
+import Countdown from './Countdown.js'
 
-const Controls = ({ x, y, coins, score, translate }) => (
-  <div className="controls">
-  <div id="border" onClick={translate}>
-      <Grid
-        x={x}
-        y={y}
-        coins={coins}
-      />
-  </div>
-  <Scoreboard
-      score={score}
-  />
-  </div>
+const Controls = ({ x, y, coins, score, translate, remaining}) => (
+	<div className="controls">
+		<div id="play-area">
+			<div id="border" onClick={translate}>
+			  <Grid
+			    x={x}
+			    y={y}
+			    coins={coins}
+			  />
+			</div>
+			<Reset/>	
+		</div>
+		<Scoreboard
+		  score={score}
+		/>
+		<Countdown
+		remaining={remaining}
+		/>
+	</div>
 )
 
 Controls.propTypes = {
@@ -22,7 +30,8 @@ Controls.propTypes = {
 	x: PropTypes.number.isRequired,
 	y: PropTypes.number.isRequired,
 	coins: PropTypes.array.isRequired,
-  score: PropTypes.number.isRequired
+  score: PropTypes.number.isRequired,
+  remaining: PropTypes.number.isRequired
 }
 
 export default Controls

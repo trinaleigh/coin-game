@@ -8,15 +8,32 @@
 	background-color: var(--primary)
 }
 
-#border {
+#play-area {
 	height: 80vmin;
 	width: 80vmin;
 	margin: 4vmin 4vmin 1vmin 4vmin;
+}
+
+#border {
+	position: absolute;
+	height: 80vmin;
+	width: 80vmin;
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
 	background-color: var(--secondary);
+}
+
+#reset {
+	background-color: var(--tertiary);
+	color: var(--primary);
+	font-size: 6vmax;
+	position: absolute;
+	height: 80vmin;
+	width: 80vmin;
+	outline: none;
+	border: none;
 }
 
 #grid {
@@ -49,7 +66,7 @@
 	justify-content: space-around;
 }
 
-#scoreboard {
+.info {
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -59,22 +76,12 @@
 	user-select: none;
 }
 
-#scoreboard p {
+.info p {
 	margin: 0;
 	text-align: center;
 }
 
-#score {
+.focus-value {
 	font-size: 10vmax;
 }
 
-#reset {
-	float: right;
-	font-size: 2vmax;
-	padding: 1vmax;
-	border-radius: 1vmax;
-	margin: 1vmax;
-	background-color: var(--highlight);
-	outline: none;
-	border: none;
-}

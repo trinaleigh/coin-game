@@ -4,10 +4,11 @@ import { movePlayer } from '../actions'
 
 const mapStateToProps = (state) => {
 	return {
-		x: state.x,
-		y: state.y,
-		coins: state.coins,
-		score: state.score
+		x: state.game.x,
+		y: state.game.y,
+		coins: state.game.coins,
+		score: state.game.score,
+		remaining: state.timer
 	}
 }
 

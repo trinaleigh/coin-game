@@ -1,13 +1,17 @@
 import React, { PropTypes } from 'react'
 
-const ResetButton = ({ resetClick }) => (
-  <button id="reset" onClick={resetClick}>
-  RESET
-  </button>
+const ResetButton = ({ visibility, resetClick }) => (
+	<button id="reset" 
+		onClick={resetClick}
+		style={{ visibility: visibility }}
+	>
+		START
+	</button>
 )
 
 ResetButton.propTypes = {
-	translate: PropTypes.func.isRequired
+	visibility: PropTypes.bool.isRequired,
+	translate: PropTypes.string.isRequired
 }
 
 export default ResetButton

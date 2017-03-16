@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react'
 
 const Score = ({ score }) => (
-	<div id="scoreboard">
-		<p id="score">{score}</p>
+	<div className="info">
+		<p className="focus-value">{score}</p>
 		<p>SCORE</p>
 	</div>
 )

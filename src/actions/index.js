@@ -20,8 +20,20 @@ export const movePlayer = (xClick,yClick) => {
 	}
 }
 
-export const reset = () => {
+export const resetBoard = () => {
 	return {
-		type: 'RESET'
+		type: 'RESET_BOARD'
+	}
+}
+
+export const decrement = () => {
+	return {
+		type: 'DECREMENT'
+	}
+}
+
+export const resetClock = () => {
+	return {
+		type: 'RESET_CLOCK'
 	}
 }
