@@ -16,7 +16,7 @@ const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 				    coins={coins}
 				  />
 				</div>
-				<Reset/>	
+				<Reset/>
 			</div>
 		</div>
 		<div id="trackers">

@@ -1,6 +1,6 @@
 * {
 	--primary: #F4F4F4;
-	--secondary: #8C0909;
+	--secondary: #971549;
 	--tertiary: #4AA9AF;
 	--highlight: #FB9935;
 	font-family: Helvetica;
@@ -14,7 +14,7 @@
 	margin: 4vmin 4vmin 1vmin 4vmin;
 }
 
-#border {
+#border, #overlay {
 	position: absolute;
 	height: 80vmin;
 	width: 80vmin;
@@ -22,16 +22,23 @@
   	flex-direction: column;
   	justify-content: center;
   	align-items: center;
-	background-color: var(--secondary);
+}
+
+#border {
+  	background-color: var(--secondary);
+}
+
+#overlay {
+  	background-color: var(--tertiary);
 }
 
 #reset {
-	background-color: var(--tertiary);
+	background-color: var(--highlight);
 	color: var(--primary);
-	font-size: 8vmin;
-	position: absolute;
-	height: 80vmin;
-	width: 80vmin;
+	height: 25vmin;
+	width: 25vmin;
+	border-radius: 12.5vmin;
+	font-size: 6vmin;
 	outline: none;
 	border: none;
 }
@@ -91,7 +98,7 @@
 }
 
 #record {
-	font-size: 3vmin;
+	font-size: 3.5vmin;
 	text-align: right;
 	margin: 1vmin 4vmin 1vmin 4vmin;
 }
