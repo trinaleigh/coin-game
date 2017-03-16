@@ -4,17 +4,20 @@ import Reset from '../containers/Reset.js'
 import Scoreboard from './Scoreboard.js'
 import Countdown from './Countdown.js'
 
-const Controls = ({ x, y, coins, score, translate, remaining}) => (
+const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 	<div className="controls">
-		<div id="play-area">
-			<div id="border" onClick={translate}>
-			  <Grid
-			    x={x}
-			    y={y}
-			    coins={coins}
-			  />
+		<div>
+			<p id="record">HIGH SCORE: {highScore}</p>
+			<div id="play-area">	
+				<div id="border" onClick={translate}>
+				  <Grid
+				    x={x}
+				    y={y}
+				    coins={coins}
+				  />
+				</div>
+				<Reset/>	
 			</div>
-			<Reset/>	
 		</div>
 		<Scoreboard
 		  score={score}
@@ -31,6 +34,7 @@ Controls.propTypes = {
 	y: PropTypes.number.isRequired,
 	coins: PropTypes.array.isRequired,
   score: PropTypes.number.isRequired,
+  highScore: PropTypes.number.isRequired,
   remaining: PropTypes.number.isRequired
 }
 

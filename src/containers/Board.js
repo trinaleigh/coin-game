@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
 		y: state.game.y,
 		coins: state.game.coins,
 		score: state.game.score,
+		highScore: state.game.highScore,
 		remaining: state.timer
 	}
 }
