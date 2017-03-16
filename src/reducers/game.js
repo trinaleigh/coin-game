@@ -30,7 +30,7 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
         		y: yNext,
         		coins: nextCoins,
         		score: nextScore,
-        		highScore: state.highScore}
+        		highScore: nextScore > state.highScore ? nextScore : state.highScore}
 
     } else if (action.type === 'RESET_BOARD') {
 
@@ -39,8 +39,8 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
     		y: 0, 
     		coins: [{x:2, y:2}, {x:2, y:7}, {x:7, y:2}, {x:7, y:7},], 
     		score: 0,
-    		highScore: state.score > state.highScore ? state.score : state.highScore}
-    		
+    		highScore: state.highScore}
+
 	} else {
 		return state
 	}

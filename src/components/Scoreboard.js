@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 const Score = ({ score }) => (
 	<div className="info">
 		<p className="focus-value">{score}</p>
-		<p>SCORE</p>
+		<p>POINTS</p>
 	</div>
 )
 

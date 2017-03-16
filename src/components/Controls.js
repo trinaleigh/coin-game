@@ -19,12 +19,14 @@ const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 				<Reset/>	
 			</div>
 		</div>
-		<Scoreboard
-		  score={score}
-		/>
-		<Countdown
-		remaining={remaining}
-		/>
+		<div id="trackers">
+			<Scoreboard
+			  score={score}
+			/>
+			<Countdown
+			remaining={remaining}
+			/>
+		</div>
 	</div>
 )
 

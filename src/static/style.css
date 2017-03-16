@@ -28,7 +28,7 @@
 #reset {
 	background-color: var(--tertiary);
 	color: var(--primary);
-	font-size: 6vmax;
+	font-size: 8vmin;
 	position: absolute;
 	height: 80vmin;
 	width: 80vmin;
@@ -66,12 +66,17 @@
 	justify-content: space-around;
 }
 
+#trackers {
+	display: flex;
+	flex-direction: row;
+}
+
 .info {
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: middle;
-	font-size: 3vmax;
+	font-size: 5vmin;
 	margin: 4vmin 4vmin 1vmin 4vmin;
 	user-select: none;
 }
@@ -82,7 +87,7 @@
 }
 
 .focus-value {
-	font-size: 10vmax;
+	font-size: 16vmin;
 }
 
 #record {
