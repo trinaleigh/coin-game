@@ -1,4 +1,4 @@
-const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action) => {
+const game = (state = { x: 0, y: 0, direction: 0, coins: [], score: 0, highScore: 0 }, action) => {
 	if (action.type === 'MOVE_PLAYER') {
 
 		var xNext = state.x + action.dx
@@ -28,6 +28,7 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
 
         return {x: xNext, 
         		y: yNext,
+        		direction: action.dx === 0 ? action.dy*Math.PI/2 : Math.atan2(action.dy, action.dx),
         		coins: nextCoins,
         		score: nextScore,
         		highScore: nextScore > state.highScore ? nextScore : state.highScore}
@@ -36,7 +37,8 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
 
     	return { 
     		x: 0, 
-    		y: 0, 
+    		y: 0,
+    		direction: 0, 
     		coins: [{x:2, y:2, value:1}, {x:2, y:7, value:2}, {x:7, y:2, value:3}, {x:7, y:7, value:4}], 
     		score: 0,
     		highScore: state.highScore}

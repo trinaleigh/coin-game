@@ -4,7 +4,7 @@ import Reset from '../containers/Reset.js'
 import Scoreboard from './Scoreboard.js'
 import Countdown from './Countdown.js'
 
-const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
+const Controls = ({ x, y, direction, coins, score, highScore, translate, remaining}) => (
 	<div className="controls">
 		<div id="trackers">
 			<Scoreboard
@@ -20,6 +20,7 @@ const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 				  <Grid
 				    x={x}
 				    y={y}
+				    direction={direction}
 				    coins={coins}
 				  />
 				</div>
@@ -34,10 +35,11 @@ Controls.propTypes = {
 	translate: PropTypes.func.isRequired,
 	x: PropTypes.number.isRequired,
 	y: PropTypes.number.isRequired,
+	direction: PropTypes.number.isRequired,
 	coins: PropTypes.array.isRequired,
-  score: PropTypes.number.isRequired,
-  highScore: PropTypes.number.isRequired,
-  remaining: PropTypes.number.isRequired
+	score: PropTypes.number.isRequired,
+	highScore: PropTypes.number.isRequired,
+	remaining: PropTypes.number.isRequired
 }
 
 export default Controls

@@ -6,6 +6,7 @@ const mapStateToProps = (state) => {
 	return {
 		x: state.game.x,
 		y: state.game.y,
+		direction: state.game.direction,
 		coins: state.game.coins,
 		score: state.game.score,
 		highScore: state.game.highScore,

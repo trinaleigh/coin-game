@@ -58,7 +58,9 @@
 	position: absolute;
 	height: 6vmin;
 	width: 6vmin;
-	background-color: var(--tertiary)
+	background-image: url("images/turtle.png");
+	background-size: 100%;
+	background-color: transparent;
 }
 
 .coin {
