@@ -1,8 +1,11 @@
 * {
 	--primary: #F4F4F4;
-	--secondary: #971549;
-	--tertiary: #4AA9AF;
-	--highlight: #FB9935;
+	--secondary: #2F1B41;
+	--tertiary: #01A7A3;
+	--coin1: #FFC107;
+	--coin2: #FFA726;
+	--coin3: #FF9800;
+	--coin4: #F57C00;
 	font-family: Helvetica;
 	color: var(--secondary);
 	background-color: var(--primary)
@@ -33,7 +36,7 @@
 }
 
 #reset {
-	background-color: var(--highlight);
+	background-color: var(--coin3);
 	color: var(--primary);
 	height: 25vmin;
 	width: 25vmin;
@@ -41,6 +44,7 @@
 	font-size: 6vmin;
 	outline: none;
 	border: none;
+	user-select: none;
 }
 
 #grid {
@@ -62,7 +66,6 @@
 	height: 6vmin;
 	width: 6vmin;
 	border-radius: 3vmin;
-	background-color: var(--highlight)
 }
 
 .controls {
@@ -101,5 +104,6 @@
 	font-size: 3.5vmin;
 	text-align: right;
 	margin: 0.5vmin 4vmin 0.5vmin 4vmin;
+	user-select: none;
 }
 

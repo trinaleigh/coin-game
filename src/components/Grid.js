@@ -8,6 +8,7 @@ const Grid = ({ x, y, coins }) => (
 			<Coin
 				x={coin.x}
 				y={coin.y}
+				value={coin.value}
 			/>
 		)}
 		<Player

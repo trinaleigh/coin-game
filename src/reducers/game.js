@@ -19,10 +19,10 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
 
 		state.coins.forEach(coin => {
 			if (coin.x === xNext && coin.y === yNext) {
+				nextScore += coin.value
 				for (let i=0; i<4; i++){
-					nextCoins[i] = {x: Math.floor(Math.random()*10), y: Math.floor(Math.random()*10)}
-				}
-				nextScore++
+					nextCoins[i] = {x: Math.floor(Math.random()*10), y: Math.floor(Math.random()*10), value: i+1 }
+				}		
 			}
 		})
 
@@ -37,7 +37,7 @@ const game = (state = { x: 0, y: 0, coins: [], score: 0, highScore: 0 }, action)
     	return { 
     		x: 0, 
     		y: 0, 
-    		coins: [{x:2, y:2}, {x:2, y:7}, {x:7, y:2}, {x:7, y:7},], 
+    		coins: [{x:2, y:2, value:1}, {x:2, y:7, value:2}, {x:7, y:2, value:3}, {x:7, y:7, value:4}], 
     		score: 0,
     		highScore: state.highScore}
 
