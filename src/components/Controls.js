@@ -6,8 +6,15 @@ import Countdown from './Countdown.js'
 
 const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 	<div className="controls">
+		<div id="trackers">
+			<Scoreboard
+			  score={score}
+			/>
+			<Countdown
+			remaining={remaining}
+			/>
+		</div>
 		<div>
-			<p id="record">HIGH SCORE: {highScore}</p>
 			<div id="play-area">	
 				<div id="border" onClick={translate}>
 				  <Grid
@@ -18,14 +25,7 @@ const Controls = ({ x, y, coins, score, highScore, translate, remaining}) => (
 				</div>
 				<Reset/>
 			</div>
-		</div>
-		<div id="trackers">
-			<Scoreboard
-			  score={score}
-			/>
-			<Countdown
-			remaining={remaining}
-			/>
+			<p id="record">HIGH SCORE: {highScore}</p>
 		</div>
 	</div>
 )

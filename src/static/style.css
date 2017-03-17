@@ -9,15 +9,15 @@
 }
 
 #play-area {
-	height: 80vmin;
-	width: 80vmin;
-	margin: 4vmin 4vmin 1vmin 4vmin;
+	height: 85vmin;
+	width: 85vmin;
+	margin: 2vmin;
 }
 
 #border, #overlay {
 	position: absolute;
-	height: 80vmin;
-	width: 80vmin;
+	height: 85vmin;
+	width: 85vmin;
 	display: flex;
   	flex-direction: column;
   	justify-content: center;
@@ -82,9 +82,9 @@
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: middle;
+	align-items: center;
 	font-size: 5vmin;
-	margin: 4vmin 4vmin 1vmin 4vmin;
+	margin: 6vmin;
 	user-select: none;
 }
 
@@ -100,6 +100,6 @@
 #record {
 	font-size: 3.5vmin;
 	text-align: right;
-	margin: 1vmin 4vmin 1vmin 4vmin;
+	margin: 0.5vmin 4vmin 0.5vmin 4vmin;
 }
 
