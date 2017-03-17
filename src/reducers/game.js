@@ -28,7 +28,7 @@ const game = (state = { x: 0, y: 0, direction: 0, coins: [], score: 0, highScore
 
         return {x: xNext, 
         		y: yNext,
-        		direction: action.dx === 0 ? action.dy*Math.PI/2 : Math.atan2(action.dy, action.dx),
+        		direction: Math.atan2(action.dy, action.dx),
         		coins: nextCoins,
         		score: nextScore,
         		highScore: nextScore > state.highScore ? nextScore : state.highScore}

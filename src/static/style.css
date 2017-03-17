@@ -1,7 +1,7 @@
 * {
 	--primary: #F4F4F4;
-	--secondary: #2F1B41;
-	--tertiary: #01A7A3;
+	--secondary: #228896;
+	--tertiary: #A9C52F;
 	--coin1: #FFC107;
 	--coin2: #FFA726;
 	--coin3: #FF9800;
@@ -29,14 +29,18 @@
 
 #border {
   	background-color: var(--secondary);
+  	background-image: url("images/guides.png");
+  	background-size: 89%;
+  	background-position: center;
+  	background-repeat: no-repeat;
 }
 
 #overlay {
-  	background-color: var(--tertiary);
+  	background-color: var(--secondary);
 }
 
 #reset {
-	background-color: var(--coin3);
+	background-color: var(--tertiary);
 	color: var(--primary);
 	height: 25vmin;
 	width: 25vmin;
