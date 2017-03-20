@@ -4,7 +4,7 @@ export const loadScore = () => {
 		if (userScore === null) {
 			return 0
 		}
-		return JSON.parse(userScore)	
+		return parseInt(userScore)	
 	} catch (err) {
 		return 0
 	}
@@ -12,7 +12,7 @@ export const loadScore = () => {
 
 export const saveScore = (state) => {
 	try {
-		const userScore = JSON.stringify(state.game.highScore)
+		const userScore = state.game.highScore.toString()
 		localStorage.setItem('score', userScore)
 	} catch (err) {
 		console.log(err)
