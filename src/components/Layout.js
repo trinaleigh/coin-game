@@ -4,8 +4,23 @@ import { Link } from 'react-router';
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import coinGameReducer from '../reducers';
+import { loadScore, saveScore } from '../localStorage.js'
 
-let store = createStore(coinGameReducer,applyMiddleware(thunk))
+const persistedState = { 
+	game : {
+		x: 0, 
+		y: 0, 
+		direction: 0, 
+		coins: [], 
+		score: 0, 
+		highScore: loadScore() }
+}
+
+const store = createStore(coinGameReducer, persistedState, applyMiddleware(thunk))
+
+store.subscribe(() => {
+	saveScore( store.getState() )
+})
 
 export default class Layout extends React.Component {
   
